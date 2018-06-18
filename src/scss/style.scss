@@ -1,29 +1,28 @@
 
 body{
-	background:
-	linear-gradient(to top, #30cfd0 0%, #330867 100%);
 	background-attachment: fixed; 
 	font-family: Helvetica, Arial, sans-serif;
 	overflow-x: hidden; 
 
 }
 .img-logo {
-	height: 40px;
-	width: 132px;
+	height: 80px;
+	width: 80px;
 	display: block;
-	background: url('/assets/logo.png') no-repeat;
+	background: url('/assets/logo_01.png') no-repeat;
 	background-size: contain;
 	color: transparent;
 }
 
 nav.navbar-transparente {
-	padding: 15px 0px;
+	padding: 0px 0px;
 	background: rgba(0, 0, 0, 0.6);
 	border: none; 
+
 }
 
 .navbar-brand {
-	padding: 5px 15px;
+	padding: 0px 15px;
 
 }
 
@@ -38,12 +37,11 @@ nav.navbar-transparente {
 }
 
  .fonte-p{
-   font-family: "Ubuntu", sans-serif;
-       font-weight: 300;
+  font-family: 'Roboto', sans-serif;
    
   }
  #servico {
 	background: white;
-	padding-top: 20px;
+	padding-top: 20px;		
 	padding-bottom: 20px;
 }

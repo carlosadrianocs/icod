@@ -1,9 +1,15 @@
+@import "node_modules/bootstrap/scss/bootstrap";
 
-body{
+html, body{
+	height: 100%;
+	overflow: auto;
+}
+
+ body{
 	background-attachment: fixed; 
 	font-family: Helvetica, Arial, sans-serif;
 	overflow-x: hidden; 
-
+/* ================== Logo ======================*/
 }
 .img-logo {
 	height: 80px;
@@ -13,7 +19,7 @@ body{
 	background-size: contain;
 	color: transparent;
 }
-
+/* ================== navbar ======================*/
 nav.navbar-transparente {
 	padding: 0px 0px;
 	background: rgba(0, 0, 0, 0.6);
@@ -22,7 +28,7 @@ nav.navbar-transparente {
 }
 
 .navbar-brand {
-	padding: 0px 15px;
+	padding: 0px 18px;
 
 }
 
@@ -35,13 +41,181 @@ nav.navbar-transparente {
 	color: #9bf0e1;
 	background: none;
 }
+/* =================================================*/
 
+/* ================= TIPOGRAFIA =====================*/
  .fonte-p{
   font-family: 'Roboto', sans-serif;
-   
-  }
- #servico {
-	background: white;
-	padding-top: 20px;		
-	padding-bottom: 20px;
+  font-weight: 560;
 }
+.font-s{
+	font-family: "Montserrat",sans-serif !important;
+	color: #313451 !important;
+}
+/* ====================RECURSOS ====================*/
+
+
+#servico {
+	background: #F6F6F6;
+	padding-top: 40px;
+	padding-bottom: 20px;
+
+}
+
+#rodape h4 {
+	color: white;
+	font-size: 13px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+footer {
+	background: #1B2C38;
+	padding: 50px 5px 20px 0px;
+	position: relative;
+}
+.item-rede-social {
+	float: right;
+}
+
+#port{
+
+	background: #1B2C38;
+}
+#solicite {
+	background: #F6F6F6;
+	padding-top: 80px;
+	padding-bottom: 50px;
+}
+
+/*efeito*/
+ .efeito{
+    overflow: none;
+ } 
+ 
+.efeito:hover img{
+  opacity: 0.7;
+}
+
+/* ================== BOTÃO ======================*/
+
+.button {
+  display: inline-block;
+  border-radius: 10rem;
+  background-color: #1B2C38;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  padding: 4px;
+  width: 130px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 3px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 20px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+.btn {
+  display: inline-block;
+  border-radius: 10rem;
+  background-color: #1B2C38;
+  border: none;
+  color: #FFFFFF !important;
+  text-align: center;
+  font-size: 15px;
+  padding: 12px;
+  width: 15rem;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 3px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 20px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+
+/* Media queries */
+/* xs < 768 */
+@media screen and (max-width: 767px) {
+	h1 {
+	    font-size: 30px; 
+  	}
+  	.btn{
+    	margin: 10px 15px;
+	}
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+    h1 {
+	    font-size: 50px; 
+  	}
+
+}
+
+/* md */
+@media screen and (min-width: 992px) {
+    h1 {
+	    font-size: 40px; 
+  	}
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+    h1 {
+	    font-size: 40px; 
+  	}
+}
+/* Fim Media queries */

@@ -9,9 +9,12 @@
 
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
-    <title>iCod | Developers</title>
+
+    <title>iCod | Developers - Criação de Sites, Jogos, Apps e Sistemas </title>
 
     <link rel="apple-touch-icon" sizes="57x57" href="/asset/Fav/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/assets/Fav/apple-icon-60x60.png">
@@ -32,35 +35,48 @@
     <meta name="theme-color" content="#ffffff">
   </head>
   <body> 
- <nav class="navbar navbar-expand-lg fixed-top navbar-inverse navbar-transparente">
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-inverse navbar-transparente">
         <div class="container">
           <a href="index.html" class="navbar-brand">
             <span class="img-logo">iCod</span>
           </a>
           <button class="navbar-dark navbar-toggler mb-0" type="button" data-toggle="collapse" data-target="#navbarSite"> <!--Recolher navbar-->
-            <span class=" navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
           </button>
           <div class="container collapse navbar-collapse" id="navbarSite"> 
-            <ul class="navbar-nav ml-auto"><!--NOVA tag mr-auto usado para alinhar dropdow-->
+            <ul class="navbar-nav ml-auto mb-0"><!--NOVA tag mr-auto usado para alinhar dropdow-->
               <li class="nav-item">
-                <a class="fonte-p nav-link" href="#">INÍCIO</a>
+                <a class="fonte-p nav-link" href="#">HOME</a>
               </li>                      
               <li class="nav-item">
-                <a class="fonte-p nav-link" href="#">EMPRESA</a>
-              </li>
-              <li class="nav-item">
-                <a class="fonte-p nav-link" href="#">PORTIFOLIO</a>
-              </li>
-              <li class="nav-item">
-                <a class="fonte-p nav-link" href="#">SERVIÇOS</a>
+                <a class="fonte-p nav-link" href="#">PORTIFÓLIO</a>
               </li>
               <li class="nav-item">
                 <a class="fonte-p nav-link" href="#">CONTATO</a>
               </li>
+              <li class="nav-item">
+                <a class="fonte-p nav-link" href="orçamento.html">ORÇAMENTO</a>
+              </li>   
+               <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fonte-p" data-toggle="dropdown" id="navDrop" href="#">
+                  SERVIÇOS
+                </a>
+                <div class="dropdown-menu fonte-p">
+                  <a class="dropdown-item" href="#">Criação de Sites</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Aplicativos Mobile</a>
+                  <a class="dropdown-item" href="#">Desktop</a>
+                  <a class="dropdown-item" href="#">Jogos</a>
+                </div>
+              </li>
+            </ul>
             </ul>
           </div>
         </div>
      </nav>
+     <!--Navbar-->
      <!--Slide-->
     <div id="carouselSite" class="carousel slide" data-ride="carousel">    
       <ol class="carousel-indicators">
@@ -70,25 +86,25 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="/assets/slide04.jpg" class="img-fluid d-block" ><!-- nao exibir em tamneho maior q md-->
-          <div class="carousel-caption d-none d-md-block text-gradient">
-         <!--<h1>Conectamos sua empresa ao mundo</h1>
-            <p class="lead">Ao contrário do que se acredita, Lorem Ipsum não é</p> --> 
-          </div>
+          <img class="img-fluid d-block" src="/assets/slide/slide-01.jpg"><!-- nao exibir em tamneho maior q md-->
+          <!-- <div class=" fonte-p carousel-caption d-none d-md-block text-white">
+           <!-- <h1 class="display-2">Conectamos sua empresa ao mundo</h1>
+            <p class="lead">Ao contrário do que se acredita, Lorem Ipsum não é</p>
+          </div> -->
         </div>
         <div class="carousel-item">
-          <img src="/assets/slide02.jpg" class="img-fluid d-block">
-           <div class="carousel-caption d-none d-md-block text-gradient">
-           <!--<h1>Sistemas Desktop</h1>
-            <p class="lead">Ao contrário do que se acredita, Lorem Ipsum não é</p>--> 
-          </div>
+          <img src="/assets/slide/slide_02.jpg" class="img-fluid d-block">
+          <!--  <div class="carousel-caption fonte-p  d-none d-md-block text-gradient">
+           <h1 class="display-2">Sistemas Desktop</h1>
+            <p class="lead">Ao contrário do que se acredita, Lorem Ipsum não é</p>
+          </div> -->
         </div>
         <div class="carousel-item">
-          <img src="/assets/slide03.jpg" class="img-fluid d-block ">
-           <div class="carousel-caption d-none d-md-block text-gradient">
-         <!--<h1>Criacao de Sites</h1>
-            <p class="lead">Ao contrário do que se acredita, Lorem Ipsum não é</p> -->   
-          </div>
+          <img src="/assets/slide/slide_01.jpg" class="img-fluid d-block">
+          <!--  <div class="carousel-caption fonte-p d-none d-md-block text-gradient">
+          <h1 class="display-2">Criacao de Sites</h1>
+            <p class="lead">Ao contrário do que se acredita, Lorem Ipsum não é</p>  
+          </div> -->
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev">
@@ -101,40 +117,151 @@
       </a>
     </div>
     </div>
+    <!--Slide-->
+    <!--Serviços-->
     <section id="servico">
-      <div class="container marketing" align="center">
+      <div class="container" align="center">
         <div class="row">
-          <div class="col-lg-4"">
-            <img class="rounded-circle" src="/assets/logo_01.png" width="170" height="170" alt="Generic placeholder image">
-            <h3>Criação de Sites</h3>
-            <p>
-              <a class="btn btn-secondary" href="#" role="button">View details »</a>
+          <div class="container">
+            <h2 class="font-s">O que você precisa?</h2>
+            <p class="card-subtitleb mb-3 text-muted">Veja alguns de nossos serviços!</p>  
+          </div>
+          <div class="col-lg-3 my-2 efeito">
+            <a href="#">
+            <img class="rounded-circle" src="/assets/servicos/webr.png" width="170" height="160">
+            </a>
+            <h5 class="fonte-p my-2 font-s">Criação de Sites</h5>
+            <p class="card-subtitleb mb-4 text-muted">
+              Criamos sites personalizados
             </p>
+            <button class="button" style="vertical-align:middle"><span>Saiba mais</span></button>
           </div>   
-           <div class="col-lg-4" >
-            <img class="rounded-circle" src="/assets/logo_01.png" width="170" height="170" alt="Generic placeholder image">
-            <h3>Mobile</h3>
-            <p>
-              <a class="btn btn-secondary" href="#" role="button">View details »</a>
+           <div class="col-lg-3 my-2 efeito">
+            <a href="#">
+            <img class="rounded-circle" src="/assets/servicos/mob.jpg" width="170" height="160">
+          </a>
+            <h5 class="fonte-p my-2 font-s">Aplicativos</h5>
+            <p class="card-subtitleb mb-4 text-muted">
+              Criamos sites personalizados
             </p>
+            <button class="button" style="vertical-align:middle"><span>Saiba mais</span></button>
           </div>  
-           <div class="col-lg-4">
-            <img class="rounded-circle" src="/assets/logo_01.png" width="170" height="170" alt="Generic placeholder image">
-            <h3>Desktop</h3>
-            <p>
-              <a class="btn btn-secondary" href="#" role="button">View details »</a>
+           <div class="col-lg-3 my-2 efeito">
+            <a href="#">
+            <img class="rounded-circle" src="/assets/servicos/desk.png" width="170" height="160">
+           </a>
+            <h5 class="fonte-p my-2 font-s">Sistemas</h5>
+            <p class="card-subtitleb mb-4 text-muted">
+              Criamos sites personalizados
             </p>
+            <button class="button" style="vertical-align:middle"><span>Saiba mais</span></button>
+          </div>  
+           <div class="col-lg-3 my-2 efeito">
+            <a href="#">
+            <img class="rounded-circle" src="/assets/servicos/ed.png" width="170" height="160">
+            </a>
+            <h5 class="fonte-p my-2 font-s">Jogos Educativos</h5>
+           <p class="card-subtitleb mb-4 text-muted">
+              Criamos sites personalizados
+            </p>
+            <button class="button" style="vertical-align:middle"><span>Saiba mais</span></button>
           </div>  
         </div>
       </div>
     </section>
-    <div class="jumbotron">
-    <h1>Portifolio</h1>
-    <p>...</p>
-    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
-</div>
-      
+    <!--Serviços-->
+    <!--Trabalhos-->
+
+    <div class="album py-5" id="port">
+      <div class="container">
+        <div class="row">
+          <div class="container">
+            <h1 class="text-center mb-4 text-white fonte-s">Nossos projetos mais recentes</h1>
+          </div>
+          <div class="col-md-4 efeito">
+            <div class="img-responsive mb-4 box-shadow">
+              <a href="#">
+              <img class="card-img-top" src="/assets/port.png" />
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 efeito">
+            <div class="img-responsive mb-4 box-shadow">
+              <a href="#">
+              <img class="card-img-top" src="/assets/port.png"/>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 efeito">
+            <div class="img-responsive mb-4 box-shadow">
+              <a href="#">
+              <img class="card-img-top" src="/assets/port.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>  
     </div>
+    <section id="solicite">
+      <div class="container" align="center">
+        <div class="col-md-9">
+          <h3 class="text-dark font-s">Solicite seu Orçamento!</h3>
+        <br>
+        <a href="#" class="btn my-2">
+          <span>SOLICITAR ORÇAMENTO</span>
+        </a>
+      </div>
+    </div>
+    </section>
+    <!--Trabalhos-->
+    <!-- Link WhatsApp -->
+    <a href="https://api.whatsapp.com/send?l=pt&amp;phone=5598984494134"><img src="https://i.imgur.com/XMsxHpu.png" style="height:50px; position:fixed; bottom: 25px; right: 25px; z-index:100;" data-selector="img"></a>
+     <!-- Rodapé -->
+    <footer id="rodape">
+      <dir class="container">
+        <div class="row">
+         <div class="col-md-2 mb-3">
+           <span class="img-logo">iCod</span>
+         </div>
+           <div class="col-md-3 nav">
+            <ul class="nav-link">
+              <h5 class="text-white">Serviços</h5>
+              <a class="nav-item" href="index.html" style="text-decoration: none;" class="text-white">Criação de sites</a>
+              <br>
+              <a class="nav-item" href="quem-somos.html" class="text-white" style="text-decoration: none;">Aplicativos Movéis</a>
+              <br>
+              <a class="nav-item" href="https://drive.google.com/file/d/1fmn0aICL7yDAEyes75wcWjpaC8TxHVMz/view" class="text-white" target="_blank" style="text-decoration: none;">Jogos</a>
+              <br>
+              <a class="nav-item" href="promocoes.html" class="text-white" style="text-decoration: none;">Sistemas</a>
+              <br>
+              <a class="nav-item"s href="contato.html" class="text-white" style="text-decoration: none;">Soluções</a>
+            </ul>
+          </div>
+           <div class="col-md-3 nav">
+            <ul class="nav-link">
+              <h5 class="text-white">Serviços</h5>
+              <a class="nav-item" href="index.html" style="text-decoration: none;" class="text-white">Criação de sites</a>
+              <br>
+              <a class="nav-item" href="quem-somos.html" class="text-white" style="text-decoration: none;">Aplicativos Movéis</a>
+              <br>
+              <a class="nav-item" href="https://drive.google.com/file/d/1fmn0aICL7yDAEyes75wcWjpaC8TxHVMz/view" class="text-white" target="_blank" style="text-decoration: none;">Jogos</a>
+              <br>
+              <a class="nav-item" href="promocoes.html" class="text-white" style="text-decoration: none;">Sistemas</a>
+              <br>
+              <a class="nav-item"s href="contato.html" class="text-white" style="text-decoration: none;">Soluções</a>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="nav">
+              <li class="item-rede-social mr-2"><a href=""><img src="/assets/face.png" width="30" height="30"></a></li>
+              <li class="item-rede-social mr-2"><a href=""><img  src="/assets/link.png" width="30" height="30"></a></li>
+              <li class="item-rede-social mr-2"><a href=""><img  src="/assets/insta.png" width="30" height="30"></a></li>
+              <li class="item-rede-social mr-2"><a href="https://api.whatsapp.com/send?l=pt&amp;phone=5598984494134"><img  src="/assets/wp.png" width="30" height="30"></a></li>
+            </ul>
+          </div>
+        </div><!-- row -->
+      </dir>
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="/js/jquery.min.js"></script>

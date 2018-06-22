@@ -43,7 +43,7 @@ nav.navbar-transparente {
 }
 /* =================================================*/
 
-/* ================= TIPOGRAFIA =====================*/
+/* ================= TIPOGRAFIA - FONTES =====================*/
  .fonte-p{
   font-family: 'Roboto', sans-serif;
   font-weight: 560;
@@ -52,7 +52,11 @@ nav.navbar-transparente {
 	font-family: "Montserrat",sans-serif !important;
 	color: #313451 !important;
 }
-/* ====================RECURSOS ====================*/
+/* ====================RECURSOS - DIV ====================*/
+
+.slider{
+	
+}
 
 
 #servico {
@@ -62,14 +66,14 @@ nav.navbar-transparente {
 
 }
 
-#rodape h4 {
+#rodape h5 {
 	color: white;
 	font-size: 13px;
 	font-weight: 400;
 	text-transform: uppercase;
 }
 
-footer {
+footer { /*rodape*/
 	background: #1B2C38;
 	padding: 50px 5px 20px 0px;
 	position: relative;

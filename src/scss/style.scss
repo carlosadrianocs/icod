@@ -7,7 +7,7 @@ html, body{
 
  body{
 	background-attachment: fixed; 
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: "Montserrat",sans-serif !important;
 	overflow-x: hidden; 
 /* ================== Logo ======================*/
 }
@@ -24,6 +24,16 @@ nav.navbar-transparente {
 	padding: 0px 0px;
 	background: rgba(0, 0, 0, 0.6);
 	border: none; 
+	font-size: 15px;
+	font-weight: 600;
+
+
+}
+
+nav.navbar-s {
+	padding: 10px 0px;
+	background: #1B2C38;
+	border: none; 
 
 }
 
@@ -34,8 +44,6 @@ nav.navbar-transparente {
 
 .navbar-inverse .navbar-nav>li>a, footer .nav a{
 	color: white;
-
-
 }
 .navbar-inverse .navbar-nav>li>a:hover, footer .nav a:hover {
 	color: #9bf0e1;
@@ -44,21 +52,30 @@ nav.navbar-transparente {
 /* =================================================*/
 
 /* ================= TIPOGRAFIA - FONTES =====================*/
- .fonte-p{
+ .fonte-p, h1, h3{
   font-family: 'Roboto', sans-serif;
   font-weight: 560;
+
 }
 .font-s{
 	font-family: "Montserrat",sans-serif !important;
 	color: #313451 !important;
+	font-weight: 600;
 }
 /* ====================RECURSOS - DIV ====================*/
+#page-title{
+	border-bottom: 1px solid #eee;
+	clear: both;
+	padding: 50px 0 ;
+	padding-top: 5rem;
+	position: relative;
+	background-color: #f8f8f8;
+    font-family: "Montserrat",sans-serif !important;
 
-.slider{
-	
 }
-
-
+.background-colored{
+	background-color: #1B2C38 !important;
+}
 #servico {
 	background: #F6F6F6;
 	padding-top: 40px;
@@ -77,6 +94,9 @@ footer { /*rodape*/
 	background: #1B2C38;
 	padding: 50px 5px 20px 0px;
 	position: relative;
+    color: #444;
+    font-size: 12px;
+
 }
 .item-rede-social {
 	float: right;
@@ -101,6 +121,49 @@ footer { /*rodape*/
   opacity: 0.7;
 }
 
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-group > label {
+    display: block;
+}
+#form {
+	background: #F6F6F6;
+	padding-top: 80px;
+	padding-bottom: 50px;
+
+
+}
+.form-group label{
+    color: #444;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.h1, h1 a, h2, h2 a, h3, h3 a, h4, h4 a, h5, h5 a, h6, h6 a {
+    color: #111;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 0 0 10px 0;
+    text-rendering: optimizelegibility;
+}
 /* ================== BOTÃO ======================*/
 
 .button {
@@ -188,18 +251,52 @@ footer { /*rodape*/
 }
 
 
+.btn2 {
+  display: inline-block;
+  border-radius: 10rem;
+  background-color: #1B2C38;
+  border: none;
+  color: #FFFFFF !important;
+  text-align: center;
+  font-size: 15px;
+  padding: 12px;
+  width: 15rem;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 3px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn2:hover span {
+  padding-right: 20px;
+}
+
+.btn2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
 
 
 /* Media queries */
 /* xs < 768 */
-@media screen and (max-width: 767px) {
-	h1 {
-	    font-size: 30px; 
-  	}
-  	.btn{
-    	margin: 10px 15px;
-	}
-}
 
 /* sm */
 @media screen and (min-width: 768px) {
@@ -211,15 +308,18 @@ footer { /*rodape*/
 
 /* md */
 @media screen and (min-width: 992px) {
+
     h1 {
 	    font-size: 40px; 
   	}
 }
-
 /* lg */
 @media screen and (min-width: 1200px) {
     h1 {
 	    font-size: 40px; 
   	}
 }
+
+
 /* Fim Media queries */
+

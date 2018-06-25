@@ -26,15 +26,14 @@ nav.navbar-transparente {
 	border: none; 
 	font-size: 15px;
 	font-weight: 600;
-
-
 }
 
 nav.navbar-s {
 	padding: 10px 0px;
 	background: #1B2C38;
 	border: none; 
-
+	font-size: 15px;
+	font-weight: 600;
 }
 
 .navbar-brand {
@@ -49,7 +48,9 @@ nav.navbar-s {
 	color: #9bf0e1;
 	background: none;
 }
-/* =================================================*/
+/* =====================SLIDER============================*/
+
+
 
 /* ================= TIPOGRAFIA - FONTES =====================*/
  .fonte-p, h1, h3{
@@ -144,6 +145,7 @@ footer { /*rodape*/
     text-transform: uppercase;
     font-size: 12px;
 }
+
 label {
     display: inline-block;
     max-width: 100%;

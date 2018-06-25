@@ -6312,7 +6312,9 @@ nav.navbar-transparente {
 nav.navbar-s {
   padding: 10px 0px;
   background: #1B2C38;
-  border: none; }
+  border: none;
+  font-size: 15px;
+  font-weight: 600; }
 
 .navbar-brand {
   padding: 0px 18px; }
@@ -6324,7 +6326,7 @@ nav.navbar-s {
   color: #9bf0e1;
   background: none; }
 
-/* =================================================*/
+/* =====================SLIDER============================*/
 /* ================= TIPOGRAFIA - FONTES =====================*/
 .fonte-p, h1, h3 {
   font-family: 'Roboto', sans-serif;

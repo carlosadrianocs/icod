@@ -48,9 +48,7 @@ nav.navbar-s {
 	color: #9bf0e1;
 	background: none;
 }
-/* =====================SLIDER============================*/
-
-
+/* =================================================*/
 
 /* ================= TIPOGRAFIA - FONTES =====================*/
  .fonte-p, h1, h3{
@@ -63,6 +61,8 @@ nav.navbar-s {
 	color: #313451 !important;
 	font-weight: 600;
 }
+
+
 /* ====================RECURSOS - DIV ====================*/
 #page-title{
 	border-bottom: 1px solid #eee;
@@ -84,6 +84,8 @@ nav.navbar-s {
 
 }
 
+
+
 #rodape h5 {
 	color: white;
 	font-size: 13px;
@@ -103,14 +105,42 @@ footer { /*rodape*/
 	float: right;
 }
 
-#port{
-
+.one{
+    text-align: center;
 	background: #1B2C38;
+    padding-top: 20px;
+    position: relative;
 }
+.one::after,
+.one::before{
+    position: absolute;
+    content: '';
+    width: 150px;
+    height: 150px;
+    background: #1B2C38;
+    bottom: -1rem;
+    z-index: 100;
+    
+    
+}
+.one::before{
+    right: 50%;
+    transform: skew(0,20deg)
+}
+.one::after{
+    left: 50%;
+    transform: skew(0,-20deg)
+}
+
+
 #solicite {
 	background: #F6F6F6;
 	padding-top: 80px;
 	padding-bottom: 50px;
+}
+.social:hover{   
+    cursor: pointer;
+ -webkit-transform: translateY(-2px);  
 }
 
 /*efeito*/

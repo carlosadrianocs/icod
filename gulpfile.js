@@ -11,13 +11,14 @@ gulp.task('sass', function() {
 
 });
 
-//mover js para src.js
+//mover js para
 gulp.task('js', function() {
     return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/popper.js/dist/umd/popper.min.js'])
         .pipe(gulp.dest("js"))
         .pipe(browsersync.stream());
 
 });
+
 
 //servidor para olhar os Html /scss
 gulp.task('server', ['sass'], function() {
@@ -32,3 +33,4 @@ gulp.task('server', ['sass'], function() {
 });
 
 gulp.task('default', ['js', 'server']);
+

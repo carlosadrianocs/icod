@@ -1,22 +1,24 @@
 {
   "name": "icod",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "Carlos",
-  "license": "ISC",
-  "devDependencies": {
-    "browser-sync": "^2.24.4",
-    "gulp": "^3.9.1",
-    "gulp-sass": "^4.0.1"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlosNx/icod.git"
   },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarlosNx/icod/issues"
+  },
+  "homepage": "https://github.com/CarlosNx/icod#readme",
   "dependencies": {
-    "bootstrap": "^4.1.1",
+    "bootstrap": "^4.0.0-beta.2",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.3"
-  },
-  "description": ""
+  }
 }

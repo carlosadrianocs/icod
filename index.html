@@ -7,8 +7,8 @@
 
     <!-- Bootstrap CSS -->
 
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link href="node_modules/bootstrap/compiler/bootstrap.css" rel="stylesheet">
+    <link href="node_modules/bootstrap/compiler/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -170,21 +170,32 @@
     </section>
     <!--Serviços-->
     <!--Trabalhos-->
-    <section class="one text-white" >
-        <div class="container">
-            <h1 class="my-5">Nossos trabalhos mais recentes</h1>
-            <div class="col-md-4">
-            <div class="img-responsive mb-2 box-shadow">
-              <img class="card-img-top" src="/assets/uno.jpg"  width="350" height="230" />
-              <div class="card-body">
-              <h6 class="card-title text-uppercase">Sites exclusivos</h6>
-              <p class="text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
+
+    <div class="album py-5 port">
+      <div class="container">
+        <div class="row">
+          <div class="container text-white my-5" align="center">
+            <h1 class="text-center fonte-p">Nossos projetos mais recentes</h1>
+              <p>Confira uma breve demonstração de alguns trabalhos realizados</p>
+          </div>
+          <div class="col-md-4 img-g">
+            <div class="img-responsive mb-4 box-shadow">
+              <img class="card-img-top" src="/assets/uno.jpg"  width="200" height="330"/>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="img-responsive mb-4 box-shadow">
+              <img class="card-img-top" src="/assets/uno2.png"  width="00" height="330"/>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="img-responsive mb-4 box-shadow">
+              <img class="card-img-top" src="/assets/bd.png"  width="200" height="330"/>
             </div>
           </div>
         </div>
-    </section>
-    
+      </div>  
+    </div>
     <section id="solicite">
       <div class="container" align="center">
         <div class="col-md-9">
@@ -240,10 +251,10 @@
           </div>
           <div class="col-md-2">
             <ul class="nav">
-              <li class="item-rede-social mr-2 social"><a href=""><img src="/assets/social/face.png" width="30" height="30"></a></li>
-              <li class="item-rede-social mr-2 social"><a href=""><img  src="/assets/social/link.png" width="30" height="30"></a></li>
-              <li class="item-rede-social mr-2 social"><a href=""><img  src="/assets/social/insta.png" width="30" height="30"></a></li>
-              <li class="item-rede-social mr-2 social"><a href="https://api.whatsapp.com/send?l=pt&amp;phone=5598984494134"><img  src="/assets/social/wp.png" width="30" height="30"></a></li>
+              <li class="item-rede-social mr-2"><a href=""><img src="/assets/social/face.png" width="30" height="30"></a></li>
+              <li class="item-rede-social mr-2"><a href=""><img  src="/assets/social/link.png" width="30" height="30"></a></li>
+              <li class="item-rede-social mr-2"><a href=""><img  src="/assets/social/insta.png" width="30" height="30"></a></li>
+              <li class="item-rede-social mr-2"><a href="https://api.whatsapp.com/send?l=pt&amp;phone=5598984494134"><img  src="/assets/social/wp.png" width="30" height="30"></a></li>
             </ul>
           </div>
         </div><!-- row -->
@@ -251,8 +262,8 @@
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/popper.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
   </body>
 </html>

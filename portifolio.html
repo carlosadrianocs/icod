@@ -7,8 +7,8 @@
 
     <!-- Bootstrap CSS -->
 
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link href="node_modules/bootstrap/compiler/bootstrap.css" rel="stylesheet">
+    <link href="node_modules/bootstrap/compiler/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -47,20 +47,20 @@
           <div class="container collapse navbar-collapse" id="navbarSite"> 
             <ul class="navbar-nav ml-auto mb-0"><!--NOVA tag mr-auto usado para alinhar dropdow-->
               <li class="nav-item">
-                <a class=" nav-link" href="#">HOME</a>
+                <a class="nav-link" href="index.html">HOME</a>
               </li>                      
               <li class="nav-item">
-                <a class=" nav-link" href="portifolio.html">PORTIFÓLIO</a>
+                <a class="nav-link" href="#">PORTIFÓLIO</a>
               </li>
               <li class="nav-item">
-                <a class=" nav-link" href="orçamento.html">ORÇAMENTO</a>
-              </li>   
+                <a class="nav-link" href="orçamento.html">ORÇAMENTO</a>
+              </li>    
                <ul class="navbar-nav mr-auto">
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navDrop" href="#">
                   SERVIÇOS
                 </a>
-                <div class="dropdown-menu ">
+                 <div class="dropdown-menu">
                   <a class="dropdown-item" href="site.html">Criação de Sites</a>
                   <a class="dropdown-item" href="app.html">Criação de Aplicativos</a>
                   <a class="dropdown-item" href="sistemas.html">Sistemas</a>
@@ -73,18 +73,18 @@
         </div>
      </nav>
      <!--Navbar-->
- <section id="page-title" class="background-colored text-white">
+       <section id="page-title" class="background-colored text-white">
       <div class="container">
         <div class="page-title">
           <h1>Portifólio</h1>
-          <span>Alguns dos nossos trabalhos</span>
+          <span>Alguns dos nossos trabalho atuais</span>
         </div>
       </div>
-  </section>    
+    </section>
   <section id="solicite">
    <div class="container" align="center">
       <div class="col-md-9">
-         <h3 class="text-dark font-s">Solicite seu orçamento!</h3>
+         <h3 class="text-dark font-s">Solicite seu orçamento para criação de site!</h3>
         <br>
         <a href="orçamento.html" class="btn my-2">
           <span>SOLICITAR ORÇAMENTO</span>
@@ -134,11 +134,11 @@
             </ul>
           </div>
           <div class="col-md-2">
-             <ul class="nav">
-              <li class="item-rede-social mr-2 social"><a href=""><img src="/assets/social/face.png" width="30" height="30"></a></li>
-              <li class="item-rede-social mr-2 social"><a href=""><img  src="/assets/social/link.png" width="30" height="30"></a></li>
-              <li class="item-rede-social mr-2 social"><a href=""><img  src="/assets/social/insta.png" width="30" height="30"></a></li>
-              <li class="item-rede-social mr-2 social"><a href="https://api.whatsapp.com/send?l=pt&amp;phone=5598984494134"><img  src="/assets/social/wp.png" width="30" height="30"></a></li>
+            <ul class="nav">
+              <li class="item-rede-social mr-2"><a href=""><img src="/assets/social/face.png" width="30" height="30"></a></li>
+              <li class="item-rede-social mr-2"><a href=""><img  src="/assets/social/link.png" width="30" height="30"></a></li>
+              <li class="item-rede-social mr-2"><a href=""><img  src="/assets/social/insta.png" width="30" height="30"></a></li>
+              <li class="item-rede-social mr-2"><a href="https://api.whatsapp.com/send?l=pt&amp;phone=5598984494134"><img  src="/assets/social/wp.png" width="30" height="30"></a></li>
             </ul>
           </div>
         </div><!-- row -->
@@ -146,8 +146,8 @@
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/popper.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
   </body>
 </html>

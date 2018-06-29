@@ -89,7 +89,7 @@
             <h3 class="text-uppercase fonte-p">PREENCHA O FORMULÁRIO</h3>
             <p class="text-muted">Descreva aqui seu projeto... Mas fique tranquilo, que caso tenha alguma dúvida iremos lhe ajudar!</p>
             <div class="m-t-30">
-              <form>
+              <form class="mail.php" method="post">
                 <div class="row">
                   <div class="form-group col-sm-6">
                     <label for="nome">Nome</label>
@@ -106,7 +106,7 @@
                   </div>
                   <div class="form-group col-sm-6">
                     <label for="subject">Seu Negócio (caso possua)</label>
-                    <input type="text" name="negocio" aria-required="true" class="form-control required" placeholder="Ex: E-comecce">
+                    <input type="text" name="msg" aria-required="true" class="form-control required" placeholder="Ex: E-comecce">
                   </div>
                 </div>
                 <div class="form-group">
@@ -114,13 +114,7 @@
                   <textarea type="text" name="mensagem" rows="5"  class="form-control required"
                    placeholder="Descreva detalhes do projeto" aria-required="true"></textarea>
                 </div>
-                <div class="row">
-                  <div class="col-md-12">
-                     <a href="orçamento.html" class="btn2 my-2">
-                     <span>SOLICITAR ORÇAMENTO</span>
-                     </a>
-                  </div>
-                </div>
+               <button class="button" style="vertical-align:middle" formmethod="POST"><span>Enviar</span></button>
               </form>
             </div>
           </div>

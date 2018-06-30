@@ -37,7 +37,7 @@
   </head>
   <body> 
   <!--Navbar-->
-  <nav class="navbar navbar-expand-lg fixed-top navbar-inverse navbar-transparente">
+  <nav class="navbar navbar-expand-lg navbar-inverse navbar-s">
         <div class="container">
           <a href="index.html" class="navbar-brand">
              <span class="img-logo"><img src="assets/logo/logo_01.png" width="65" height="65">iCod</span>
@@ -88,8 +88,17 @@
           <div class="col-md-7">
             <h3 class="text-uppercase fonte-p">PREENCHA O FORMULÁRIO</h3>
             <p class="text-muted">Descreva aqui seu projeto... Mas fique tranquilo, que caso tenha alguma dúvida iremos lhe ajudar!</p>
+         <!-- <br>
+              <div class="enviado text-center">
+              //  php
+               // session_start();
+              ///  if(isset($_SESSION['enviado'])){
+                //    echo $_SESSION['enviado'];
+                 //   unset($_SESSION['enviado']);
+             //   }
+              </div>-->
             <div class="m-t-30">
-              <form class="mail.php" method="post">
+              <form action="mail.php" method="post">
                 <div class="row">
                   <div class="form-group col-sm-6">
                     <label for="nome">Nome</label>
@@ -114,7 +123,7 @@
                   <textarea type="text" name="mensagem" rows="5"  class="form-control required"
                    placeholder="Descreva detalhes do projeto" aria-required="true"></textarea>
                 </div>
-               <button class="button" style="vertical-align:middle" formmethod="POST"><span>Enviar</span></button>
+                <button class="button" style="vertical-align:middle" formmethod="POST"><span>Enviar</span></button>
               </form>
             </div>
           </div>

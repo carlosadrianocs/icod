@@ -1,14 +1,20 @@
-<?php
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Orçamento</title>
+</head>
+<body>
 
-$GetParam = filter_input_array(INPUT_POST,FILTER_DEFAULT);
+<?php   
+    
+$nome = $_POST['nome'];
+$tel = $_POST['tel'];
+$email = $_POST['email'];
+$msg = $_POST['msg'];
+$mensagem = $_POST['mensagem'];
 
-
-
-$nome = $_POST`['nome'];
-$tel = $_POST`['tel'];
-$email = $_POST`['email'];
-$msg = $_POST`['msg'];
-$ mensagem = $_POST`['mensagem'];
+$headers = "Content-Type: text/html; charset=UTF-8\n";
 
 $cliente = "From: " .$nome;
 
@@ -18,10 +24,10 @@ $corpo = 'Orçamento - iCod | Developers
           tel: ' .$tel.'
           E-mael: ' .$email.'
           Negócio: ' .$msg. '
-          Mensagem: ' .mensagem.'';
-
-if(mail("adryanno@gmail.com", "Atendimento",$corpo)){
-    echo "<script>alert('Mensagem enviada com sucesso!');</script>";
+          Mensagem: ' .$mensagem.'';
+    
+if(mail("adryanno@gmail.com", "Orçamento",$corpo,$headers)){
+    echo "<script>alert('Mensagem enviada com sucesso!');</script>";   
     header("Location: orçamento.html");
     
     
@@ -29,3 +35,6 @@ if(mail("adryanno@gmail.com", "Atendimento",$corpo)){
     echo"<script>alert('Erro ao enviar, tente novamente');</script>";
 }
 ?>
+
+</body>
+</html>

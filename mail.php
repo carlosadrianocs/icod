@@ -26,7 +26,7 @@ $corpo = 'Orçamento - iCod | Developers
           Negócio: ' .$msg. '
           Mensagem: ' .$mensagem.'';
     
-if(mail("adryanno@gmail.com", "Orçamento",$corpo,$headers)){
+if(mail("icod.developers@gmail.com", "Orçamento",$corpo,$headers)){
     echo "<script>alert('Mensagem enviada com sucesso!');</script>";   
     header("Location: orçamento.html");
     

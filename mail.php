@@ -1,20 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-	<title>Orçamento</title>
-</head>
-<body>
+<?php header("Content-type: text/html; charset=utf-8");
 
-<?php   
-    
+$GetParam = filter_input_array(INPUT_POST,FILTER_DEFAULT);
+
+
+
 $nome = $_POST['nome'];
 $tel = $_POST['tel'];
 $email = $_POST['email'];
 $msg = $_POST['msg'];
 $mensagem = $_POST['mensagem'];
 
-$headers = "Content-Type: text/html; charset=UTF-8\n";
 
 $cliente = "From: " .$nome;
 
@@ -22,12 +17,12 @@ $corpo = 'Orçamento - iCod | Developers
 
           Nome: ' .$nome.'
           tel: ' .$tel.'
-          E-mael: ' .$email.'
+          E-mail: ' .$email.'
           Negócio: ' .$msg. '
           Mensagem: ' .$mensagem.'';
-    
-if(mail("icod.developers@gmail.com", "Orçamento",$corpo,$headers)){
-    echo "<script>alert('Mensagem enviada com sucesso!');</script>";   
+
+if(mail("leonardocarlos_@live.com", "Atendimento",$corpo)){
+    echo "<script>alert('Mensagem enviada com sucesso!');</script>";
     header("Location: orçamento.html");
     
     
@@ -35,6 +30,3 @@ if(mail("icod.developers@gmail.com", "Orçamento",$corpo,$headers)){
     echo"<script>alert('Erro ao enviar, tente novamente');</script>";
 }
 ?>
-
-</body>
-</html>
